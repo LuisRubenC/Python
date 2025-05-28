@@ -1,20 +1,25 @@
+def calcular_promedio(lista):
+    return sum(lista) / len(lista)
 
-num_estudiantes = int(input("¿Cuántos estudiantes quieres registrar? "))
-estudiantes = [None] * num_estudiantes
 
-for i in range(num_estudiantes):
-    print(f"\nEstudiante {i + 1}:")
-    nombre = input("Nombre del estudiante: ")
 
-    calificaciones = [None] * 4
-    calificaciones[0] = nombre  
+estudiantes = []
+aprobados = 0
+reprobados = 0
 
-    for j in range(3):
-        nota = float(input(f"Calificación de la materia {j + 1}: "))
-        calificaciones[j+1] = nota 
+cantidad = int(input("¿Cuántos estudiantes deseas registrar? "))
 
-    estudiantes[i] = calificaciones  
+for i in range(cantidad):
+    print(f"\n Estudiante {i + 1}:")
+    nombre = input("Nombre: ")
+    calificaciones = []
 
-print("\nDatos de los estudiantes registrados:")
-for i in range(num_estudiantes):
-    print(f"Nombre: {estudiantes[i][0]}, Calificaciones: {estudiantes[i][1:]}")
+    
+    })
+
+print("\n --- Resultados --- ")
+for est in estudiantes:
+    print(f"{est['nombre']}: Promedio = {est['promedio']:.2f}, Estado = {est['estado']}")
+
+print(f"\nTotal Aprobados: {aprobados}")
+print(f"Total Reprobados: {reprobados}")
