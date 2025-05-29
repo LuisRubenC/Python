@@ -18,3 +18,25 @@ for i in range(num_estudiantes):
 print("\nDatos de los estudiantes registrados:")
 for i in range(num_estudiantes):
     print(f"Nombre: {estudiantes[i][0]}, Calificaciones: {estudiantes[i][1:]}")
+    def evaluar_aprobacion(promedio):
+    return "Aprobado" if promedio >= 6.0 else "Reprobado"
+
+
+
+   for j in range(3):
+        nota = float(input(f"Calificación {j + 1}: "))
+        calificaciones.append(nota)
+
+    promedio = calcular_promedio(calificaciones)
+    estado = evaluar_aprobacion(promedio)
+
+    if estado == "Aprobado":
+        aprobados += 1
+    else:
+        reprobados += 1
+
+    estudiantes.append({
+        "Nombre": nombre,
+        "Calificaciones": calificaciones,
+        "Promedio": promedio,
+        "Estado": estado
