@@ -4,7 +4,8 @@ Este programa en Python permite registrar estudiantes, ingresar sus calificacion
 
 ## Funcionalidades
 
-+ Solicita la cantidad de estudiantes a registrar.• Permite ingresar el nombre del o los estudiantes y 3 calificaciones por cada uno.  
++ Solicita la cantidad de estudiantes a registrar.
++ Permite ingresar el nombre del o los estudiantes y 3 calificaciones por cada uno.  
 + Calcula el promedio de cada estudiante.  
 + Determina si el alumno está aprobado (promedio ≥ 6) o reprobado.  
 
